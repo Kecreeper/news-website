@@ -3,13 +3,25 @@ import Header from './components/header'
 import ArticleData from '/data.json?url'
 
 function NewsArticle(data) {
-  const text = data.data.text
-  console.log(data)
+  data = data.data
+  const heading = data.heading
+  const subheading = data.subheading
+
+  const redirect = () => {
+    location.href='asdfasdf'
+  }
 
   return (
-    <div className='place-self-center max-w-xl py-5 px-10 bg-gray-400 '>
-      <img src='/news-website/img/news1.png' className='size-12' />
-      {text}
+    <div onClick={redirect} className='flex justify-start items-center mx-auto max-w-screen-md p-4 border-y-2 bg-gray-100'>
+      <img src='/news-website/img/news2.png' className='inline size-24' />
+      <div className='inline ml-4 text-2xl'>
+        <div>
+          {heading}
+        </div>
+        <div className='text-lg font-thin'>
+          {subheading}
+        </div>
+      </div>
     </div>
   );
 }
@@ -31,14 +43,14 @@ function App() {
   return (
     <>
       <Header />
-      <div className='grid grid-cols-1 auto-rows-max gap-5'>
+      <div className='bg-white mx-auto max-w-screen-md min-h-screen'>
         {data && 
           data.articles.map((article) => (
             <NewsArticle key={article.name} data={article} />
           ))
         }
-        
       </div>
+      
     </>
   )
 }
