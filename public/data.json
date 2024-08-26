@@ -1,0 +1,10 @@
+{
+    "articles": [
+      {
+        "name": "this-is-a-name",
+        "heading": "New news website pops up called \"My Times\"",
+        "subheading": "sub heading",
+        "text": "this is text"
+      }
+    ]
+  }
