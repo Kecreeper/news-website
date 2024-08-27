@@ -2,9 +2,26 @@
     "articles": [
       {
         "name": "this-is-a-name",
+        "imageUrl": "/news-website/img/news2.png",
         "heading": "New news website pops up called \"My Times\"",
         "subheading": "sub heading",
-        "text": "this is text"
+        "text": "this is text",
+        "tag": ""
+      },
+      {
+        "name": "this-is-a-breaking-story",
+        "imageUrl": "/news-website/img/news2.png",
+        "heading": "Arcade ends soon",
+        "subheading": "asdf",
+        "text": "this is text",
+        "tag": "BREAKING"
+      },
+      {
+        "name": "third-article",
+        "imageUrl": "/news-website/img/news2.png",
+        "heading": "This is a third article",
+        "subheading": "sub heading number three",
+        "tag": ""
       }
     ]
   }
